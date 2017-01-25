@@ -1,20 +1,39 @@
+//Take the contents of the sonnet div and
+// place it in a variable
+
 var element = document.getElementById("sonnet");
-
+console.log("element", element);
 var sonnet = element.innerHTML;
-
 console.log(sonnet);
 
-var string = sonnet;
-var n = string.search("orphans");
-console.log(n);
+//Find and output the starting position of the 
+//word "orphans"
+
+var indexOfOrphans = sonnet;
+var n = indexOfOrphans.search("orphans");
+console.log("index of orphans: ", n);
+
+//Output the number of characters in the sonnet
 
 console.log("Length of sonnet: ", sonnet.length);
 
-var newSonnet = sonnet.replace("winter", "yuletide");
-console.log(newSonnet);
+//Replace the first occurance of the string
+// "winter" with "yuletide"
 
-var newSonnet = sonnet.replace(/the/g, "a large");
-console.log(newSonnet);
+var winterSonnet = sonnet.replace("winter", "yuletide");
+console.log(winterSonnet);
+
+//Replace all occurances of the string "the"
+// with "a large"
+
+var aLargeSonnet = sonnet.replace(/the/g, "a large");
+console.log(aLargeSonnet);
+
+//Set the content of the sonnet div 
+//with the new string
+
+document.write(aLargeSonnet.innerHTML);
+
 
 
 
