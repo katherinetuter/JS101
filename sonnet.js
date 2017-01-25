@@ -26,13 +26,13 @@ console.log(winterSonnet);
 //Replace all occurances of the string "the"
 // with "a large"
 
-var aLargeSonnet = sonnet.replace(/the/g, "a large");
-console.log(aLargeSonnet);
+var aLargeSonnet = winterSonnet.replace(/the /g, "a large ");
+console.log("final sonnet", aLargeSonnet);
 
 //Set the content of the sonnet div 
 //with the new string
 
-document.write(aLargeSonnet.innerHTML);
+element.innerHTML = aLargeSonnet;
 
 
 
