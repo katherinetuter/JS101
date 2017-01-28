@@ -10,6 +10,10 @@ var myCat = {
 	color: "blue",
 	friends: ["zoe", "callan", "lauren"]
 }
+console.log("myCat before", myCat); //before adding new value and key to object
+
+myCat.owner = "zoe"
+console.log("myCat after", myCat); //displaying myCat array after adding owner object to it
 
 console.log("Age of cat: ", myCat.age);
 console.log("Color of cat: ", myCat["color"]);
