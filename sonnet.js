@@ -31,5 +31,14 @@ var aLargeSonnet = winterSonnet.replace(/the /g, "a large ");
 element.innerHTML = aLargeSonnet;
 
 
+//for loop that pushes the index to an array for 5 times console.log (array)
+var myArray = [];
+for(var i = 0; i<5; i++){
+	myArray.push(i);
+}
+console.log("myArray ", myArray);
+
+//for loop that starts at 100 and divides by 2 each time 3 times = 100,50,25
+
 
 
